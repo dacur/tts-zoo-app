@@ -1,0 +1,15 @@
+%h1 Animals in my Zoo!
+
+%table
+  %tr
+    %th Name
+    %th Color
+    %th Legs
+
+  - @animals.each do |x|
+    %tr
+      %td= x.name
+      %td= x.color
+      %td= x.legs
+
+
